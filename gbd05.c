@@ -92,24 +92,6 @@ void rotateClockwise(Shape *s) {
     }
 }
 
-void rotateCounterClockwise(Shape *s) {
-    for (int i = 0; i < 4; i++) {
-        int oldX = s->x[i];
-        int oldY = s->y[i];
-        s->x[i] = -oldY;
-        s->y[i] = oldX;
-    }
-    int minX = s->x[0], minY = s->y[0];
-    for (int i = 1; i < 4; i++) {
-        if (s->x[i] < minX) minX = s->x[i];
-        if (s->y[i] < minY) minY = s->y[i];
-    }
-    for (int i = 0; i < 4; i++) {
-        s->x[i] -= minX;
-        s->y[i] -= minY;
-    }
-}
-
 int collision(GameBoard *board, Shape *s, int ox, int oy) {
     for (int i = 0; i < 4; i++) {
         int bx = ox + s->x[i];
