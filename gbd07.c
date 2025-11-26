@@ -1,3 +1,26 @@
+// ****************************************************************************
+// TETRIZ - A Tetris Clone
+// =======================
+// Just a text based Tetris Clone
+//
+// Modification History
+// ====================
+// When       Who                  Why
+// ========== ==================== ============================================
+// 26/11/2025 Dave Hol'            Initial check in
+// 
+// TODO List
+// =========
+// 1. Check the screen size can accommodate the parameters passed
+// 2. Enforce a minimum screen size
+// 3. Add a --help parameter that explains the command line arguments
+// 4. Make the pieces fall progressively quicker, depending on difficulty level
+// 5. Make the down key accelerate gravity rather than instantly move the piece
+// 6. Add "P" to pause
+// 7. Set default parameters
+// 8. Add a high score table (in /tmp maybe?)
+// ****************************************************************************
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
